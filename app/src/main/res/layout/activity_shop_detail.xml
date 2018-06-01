@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+            <com.example.an.shoppingdetial.MyScrollView
+                android:id="@+id/commodity_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:scrollbars="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_commodity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <com.example.an.shoppingdetial.BannerViewPager
+                            android:id="@+id/rl_commodity_pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="160dp"
+                            android:background="@drawable/ddhk_home_banner"
+                            />
+                        <LinearLayout
+                            android:id="@+id/rl_commodity_viewGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:layout_below="@id/rl_commodity_pager"
+                            android:layout_marginTop="-15dp"
+                            android:background="#00FFFFFF"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/commodity_title"
+                            android:layout_width="match_parent"
+                            android:text="@string/commodity_name"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/commodity_number"
+                            android:layout_below="@id/commodity_title"
+                            android:layout_width="match_parent"
+                            android:text="@string/commodity_number"
+                            android:textSize="12sp"
+                            android:textColor="@color/lightslategray"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/commodity_money"
+                            android:layout_below="@id/commodity_number"
+                            android:layout_width="match_parent"
+                            android:text="@string/commodity_money"
+                            android:textSize="20sp"
+                            android:textColor="@color/red"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/qianhui"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="0.001dp"/>
+                    <RelativeLayout
+                        android:id="@+id/commodity_relative_change"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/commodity_change"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/lightslategray"
+                            android:text="@string/commodity_change"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/commodity_change_name"
+                            android:layout_below="@id/commodity_change"
+                            android:layout_width="wrap_content"
+                            android:textSize="12sp"
+                            android:text="@string/commodity_change_name"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@null"
+                            android:padding="10dip"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/qianhui"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="0.001dp"/>
+
+                    <TextView
+                        android:id="@+id/is_inventory"
+                            android:layout_width="match_parent"
+                            android:text="有现货"
+                            android:padding="10dp"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/qianhui"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="0.001dp"/>
+                    <RelativeLayout
+                        android:id="@+id/rl_address_choose"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="选择地址："
+                            android:padding="10dp"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@null"
+                            android:padding="10dip"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/qianhui"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="0.001dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:drawableStart="@mipmap/ic_launcher"
+                            android:text="@string/commodity_reasion"
+                            android:gravity="center_vertical"
+                            android:textSize="12sp"
+                            android:padding="10dp"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_appraise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/user_appaise_num"
+                            android:layout_width="wrap_content"
+                            android:text="@string/user_appraise"
+                            android:padding="10dp"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/all_appraise"
+                            android:layout_width="wrap_content"
+                            android:text="@string/all_appraise"
+                            android:padding="10dp"
+                            android:textColor="@color/lightslategray"
+                            android:layout_alignParentRight="true"
+                            android:textSize="12sp"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                    <!-- 商品描述;评价;具体样品-->
+                    <RelativeLayout
+                        android:id="@+id/commodity_description"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+                        <include
+                            android:id="@+id/item_user_appraise"
+                            layout="@layout/item_user_apprise"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/qianhui"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="2dp"/>
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:button="@null"
+                        android:layout_height="40dp">
+
+                        <RadioButton
+                            android:id="@+id/commodity_summarize"
+                            android:layout_width="0dp"
+                            android:textSize="12sp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:button="@null"
+                            android:checked="true"
+                            android:textColor="@drawable/home_font_selector"
+                            android:text="@string/commodity_summarize"
+                            android:layout_height="match_parent" />
+
+                        <View
+                            android:layout_width="0.01dp"
+                            android:background="@color/qianhui"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_height="match_parent"/>
+
+                        <RadioButton
+                            android:id="@+id/commodity_parameter"
+                            android:layout_width="0dp"
+                            android:textSize="12sp"
+                            android:gravity="center"
+
+                            android:textColor="@drawable/home_font_selector"
+                            android:button="@null"
+                            android:layout_weight="1"
+                            android:text="@string/commodity_parameter"
+                            android:layout_height="match_parent" />
+                    </RadioGroup>
+                    <FrameLayout
+                        android:id="@+id/summarize_parameter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </FrameLayout>
+                </LinearLayout>
+            </com.example.an.shoppingdetial.MyScrollView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <!--添加选择器-->
+        <Button
+            android:id="@+id/commodity_like"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:drawableTop="@drawable/unlike"
+            android:gravity="center"
+            android:text="@string/commodity_like"
+            android:textColor="@color/text_color"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/commodity_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:drawableTop="@drawable/shopping_cart_no"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="@color/text_color"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/commodity_add_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/btn_order_selector"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:text="@string/add_shopping_cart"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

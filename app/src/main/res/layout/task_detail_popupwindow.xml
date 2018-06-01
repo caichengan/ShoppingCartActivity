@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/popuMessage"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="消息通知"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ddhk_find"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/popuMain"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ddhk_find"
+            android:text="首页"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/popuShare"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:text="分享"
+            android:textColor="@android:color/white"
+            android:paddingLeft="20dp"
+            android:drawableLeft="@drawable/ddhk_find"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

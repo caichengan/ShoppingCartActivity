@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">ShoppingCartActivity</string>
+
+    <!--商城-->
+
+    <string name="commodity_name">伊利 安慕希酸奶 原味</string>
+    <string name="commodity_number">205 * 4</string>
+    <string name="commodity_money">￥ 69</string>
+    <string name="commodity_change">未选</string>
+    <string name="commodity_change_name">伊利 安慕希酸奶 原味</string>
+    <string name="commodity_reasion">支持7天无理由退货</string>
+    <string name="commodity_shopping_cart">购物车</string>
+    <string name="commodity_like">喜欢</string>
+    <string name="add_shopping_cart">加入购物车</string>
+    <string name="user_appraise">用户评价(1020)</string>
+    <string name="all_appraise">查看全部评价</string>
+    <string name="user_name">阿拉克060</string>
+    <string name="user_time">2017-02-19</string>
+    <string name="commodity_summarize">概述</string>
+    <string name="commodity_parameter">参数</string>
+    <string name="commodity_cart_total">合计：￥</string>
+    <string name="commodity_cart_total_money"></string>
+    <string name="commodity_cart_account">结算</string>
+    <string name="commodity_cart_edit">编辑</string>
+    <string name="praise">到车速度很快，销售很热情，车子全新，适合资金紧张的朋友，但是最好还是别用这种方式，条款有各种限制，都是对承租人不利的，就一辆裸车，其它像车膜，踏板都是需要自己花钱购买安装，如果能像四儿子一样这些都有，那我相信买的人会多一些，个人感受</string>
+
 </resources>

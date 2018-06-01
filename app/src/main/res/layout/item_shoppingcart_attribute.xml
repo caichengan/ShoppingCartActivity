@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RadioButton
+        android:text="颜色模板"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:button="@null"
+        android:gravity="center"
+        android:background="@drawable/commodity_mark_select"
+        android:id="@+id/rb_attribute"
+        android:layout_margin="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+
+
+

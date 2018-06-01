@@ -296,6 +296,7 @@
     <color name="purple_button">#855090</color>
     <color name="btn_purple_normal_ok">#FFFFFF</color>
     <!-- 暗蓝色 -->
+    <color name="white">#ffffff</color>
     <color name="navy">#000080</color>
     <!-- 海军色 -->
     <color name="black">#000000</color>
